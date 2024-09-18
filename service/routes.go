@@ -3,6 +3,7 @@ package user
 import (
 	"net/http"
 
+	"github.com/athulmekkoth/go_server.git/types"
 	"github.com/gorilla/mux"
 )
 
@@ -18,6 +19,8 @@ func (h *Handler) RegisterRoutes(router *mux.Router) {
 }
 
 func (h *Handler) handelLogin(w http.ResponseWriter, r *http.Request) {
+	var payload types.RegisterUserPayload
+	// var payload types.RegisterUserPayload
 
 }
 func (h *Handler) handelRegister(w http.ResponseWriter, r *http.Request) {
